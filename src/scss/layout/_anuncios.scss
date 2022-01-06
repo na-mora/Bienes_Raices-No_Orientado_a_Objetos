@@ -1,0 +1,80 @@
+
+.contenedor-anuncios{
+
+    @include tablet{
+        @include grid(3, 2rem);
+    }
+    
+}
+
+.anuncio{
+    background-color: lighten($gris,5);
+    border: 1px solid darken($gris, 4) ;
+    margin-bottom: 2rem;
+
+    .contenido-anuncio{
+        padding: 2rem;
+        
+    }
+
+    h3, p{
+        margin: 0;
+    }
+    
+}
+.precio{
+    margin-top: .5rem;
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+   
+}
+
+.iconos-caracteristicas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    
+
+    li{
+        // Los li tomen cada uno 1/3 del total 
+        flex: 1;
+        display: flex;
+
+        img{
+            // Para que la imagen tome todo el ancho
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-weight: $bold;
+        }
+    }
+}
+
+// En la pagina anuncios
+
+.anuncios{
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 2rem;
+    }
+    
+}
+
+// En la pagina anuncio
+
+
+.contenedor-iconos{
+
+    @include tablet{
+        width: 50rem;
+        margin-left: 0rem;
+    }
+
+    margin-left: 4.5rem;
+    
+}

@@ -1,0 +1,32 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.no-margin{
+    margin: 0;
+}
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alinear-izquierda{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.deshabilitar{
+    pointer-events: none;
+}
+
+.bold{
+    font-weight: $bold;
+}
+.w-100{
+    width: 100%;
+    background-color: $rojo;
+}

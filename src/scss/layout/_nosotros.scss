@@ -1,0 +1,16 @@
+.nosotros{
+
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+
+    p{
+        @include tablet{
+            margin-top: 0;
+        }
+        
+        line-height: 3rem;
+    }
+    
+    margin-bottom: 5rem;
+}
